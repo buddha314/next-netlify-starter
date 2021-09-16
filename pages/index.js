@@ -1,6 +1,9 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import heroPic from '../public/hero3.jpg'
+import logoPic from '../public/logo5.png'
 
 export default function Home() {
   return (
@@ -11,13 +14,12 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Week of the Dead" />
         <p className="description">
           U Get started by editing <code>pages/index.js</code>
         </p>
-	<p>Ur Mama</p>
+          <Image src={heroPic} style="width: 100%;"></Image>
       </main>
-
       <Footer />
     </div>
   )
